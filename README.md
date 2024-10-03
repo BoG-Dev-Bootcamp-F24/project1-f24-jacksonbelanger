@@ -1,4 +1,4 @@
-# Demo
+# Project 1 - Mini Pokédex
 Watch my demo here: https://youtu.be/A-Ou6fzXWjA
 
 # Project 1 — Mini Pokédex
