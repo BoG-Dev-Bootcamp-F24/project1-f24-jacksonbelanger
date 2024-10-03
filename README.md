@@ -1,6 +1,5 @@
 # Demo
-
-https://youtu.be/A-Ou6fzXWjA
+Watch my demo here: https://youtu.be/A-Ou6fzXWjA
 
 # Project 1 — Mini Pokédex
 
