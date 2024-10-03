@@ -1,0 +1,21 @@
+#root {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half-container {
+  width: 44%;
+}
+
+#right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}

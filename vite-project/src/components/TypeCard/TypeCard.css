@@ -1,0 +1,12 @@
+#typecard {
+    background-color: #E8E8E8;
+    padding: 1px 1em;
+    margin: 0;
+    border-radius: 14px; 
+    margin-right: 6px;  
+}
+
+#type {
+    font-size: 1.2em;
+    line-height: 0;
+}

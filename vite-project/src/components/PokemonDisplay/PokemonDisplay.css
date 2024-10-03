@@ -1,0 +1,31 @@
+#pokemon-photo {
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 12px;
+}
+
+#name-container {
+    background-color: #E8E8E8;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#name {
+    line-height: 0;
+    font-size: 2em;
+}
+
+#types-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;   
+}
+
+.header3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
