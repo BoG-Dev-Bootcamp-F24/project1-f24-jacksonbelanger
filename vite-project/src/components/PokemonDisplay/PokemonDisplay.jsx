@@ -10,7 +10,7 @@ function PokemonDisplay({ imageUrl, name, types }) {
             <div id="name-container">
                 <p id="name">{name}</p>
             </div>
-            <h3 class="header3">Types:</h3>
+            <h3 className="header3">Types:</h3>
             <ul id="types-list">{typesList}</ul>
 
         </>

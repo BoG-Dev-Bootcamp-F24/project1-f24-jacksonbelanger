@@ -18,7 +18,7 @@ function InfoDisplay({ info, moves }) {
             <h2 id="info-header">{infoToggle}</h2>
             <div id="info-container">
                 {infoToggle == "Info" ?
-                    <ul class="info-list">
+                    <ul className="info-list">
                         <li>height: {info.height}m</li>
                         <li>weight: {info.weight}kg</li>
                         <li>hp: {info.hp}</li>
@@ -29,7 +29,7 @@ function InfoDisplay({ info, moves }) {
                         <li>speed: {info.speed}</li>
                     </ul>
                     :
-                    <ul class="info-list">{movesList}</ul>
+                    <ul className="info-list">{movesList}</ul>
                 }
             </div>
             <div id="toggle-container">

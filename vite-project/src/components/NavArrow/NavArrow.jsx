@@ -1,7 +1,8 @@
+import { useEffect } from 'react';
 import './NavArrow.css'
 
 function NavArrow({ direction, pokemonID, setPokemonID }) {
-    const isDisabled = direction == 'left' ? pokemonID == 1 : pokemonID == 1025;
+    const isDisabled = direction == 'left' ? pokemonID === 1 : pokemonID === 1025;
 
     function updatePokemonID() {
         if (direction == "right" && pokemonID < 1025) {
@@ -13,11 +14,11 @@ function NavArrow({ direction, pokemonID, setPokemonID }) {
 
     if (direction == "left") {
         return(
-            <button onClick={() => updatePokemonID()} id="nav-arrow">&lt;</button>
+            <button onClick={() => updatePokemonID()} id="nav-arrow" style={{color: isDisabled ? '#cccccc' : '#000000'}}>&lt;</button>
         )
     } else {
         return(
-            <button onClick={() => updatePokemonID()} id="nav-arrow">&gt;</button>
+            <button onClick={() => updatePokemonID()} id="nav-arrow" style={{color: isDisabled ? '#cccccc' : '#000000'}}>&gt;</button>
         )
     }
 }

@@ -15,14 +15,11 @@ function App() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    console.log(pokemonID)
 
     const fetchData = async () => {
       // call API
-      console.log(pokemonID)
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
       const data = await response.json()
-      console.log(data);
 
       const attributes = {
         name: data.name,
@@ -54,11 +51,11 @@ function App() {
       <Header/>
       {!isLoading ?
         <div id="main-container">
-          <div class="half-container">
+          <div className="half-container">
             <PokemonDisplay imageUrl={pokemonData.imageUrl} name={pokemonData.name.replace("-m", "♂").replace("-f", "♀")} types={pokemonData.types}/>
             <Navigation pokemonID={pokemonID} setPokemonID={setPokemonID}/>
           </div>
-          <div class="half-container" id="right-container">
+          <div className="half-container" id="right-container">
             <InfoDisplay infoToggle={infoToggle} info={pokemonData.info} moves={pokemonData.moves}/>
           </div>
         </div>
